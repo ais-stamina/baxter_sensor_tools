@@ -1,0 +1,6 @@
+<launch>
+
+	<node pkg="tf" type="static_transform_publisher" name="rgbd_camera_calibration" args="0.29731 -0.0375665 0.466356 0.62066 0.350501 -0.331242 0.618183 /base /camera_link 100" />
+    
+</launch>
+

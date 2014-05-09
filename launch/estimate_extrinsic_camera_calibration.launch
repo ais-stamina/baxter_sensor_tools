@@ -1,0 +1,17 @@
+<launch>
+
+    <node launch-prefix="" pkg="baxter_sensor_tools" type="estimate_extrinsic_camera_calibration" name="estimate_extrinsic_camera_calibration" output="screen">    	
+		<remap from="~left_inhand_camera_image" to="/cameras/left_hand_camera/image" />
+		<remap from="~left_inhand_camera_info" to="/cameras/left_hand_camera/camera_info" />
+		<remap from="~right_inhand_camera_image" to="/cameras/right_hand_camera/image" />
+		<remap from="~right_inhand_camera_info" to="/cameras/right_hand_camera/camera_info" />
+		<remap from="~ext_camera_image" to="/camera/rgb/image_raw" />
+		<remap from="~ext_camera_info" to="/camera/rgb/camera_info" />
+        <param name="board_width" value="5" />
+        <param name="board_height" value="4" />
+        <param name="board_square_size" value="0.038" />
+    </node>
+    
+    
+</launch>
+
